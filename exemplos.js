@@ -276,23 +276,114 @@ cRone = Object.assign(cRone, eu);
 console.log(cRone);
 */
 
-let journal = [
-    {
-        events: [
-            "work", "touched tree", "pizza","running", "television"
-        ],
-        squirrel: false
-    },
-    {
-        events: [
-            "work", "ice cream", "cauliflower","lasagna", "touched tree", "brushed teeth"
-        ],
-        squirrel: false
-    },
-    {
-        events: [
-            "weekend", "cycling", "break", "peanuts","beer"
-        ],
-        squirrel: true
-    },
-]
+/*
+let object1 = {value: 10};
+let object2 = object1;
+let object3 = {value: 10};
+
+console.log(object1 == object2);
+// → true
+
+console.log(object1 == object3);
+// → false
+
+object1.value = 15;
+
+console.log(object2.value);
+// → 15
+
+console.log(object3.value);
+// → 10
+
+object1.value = 20;
+
+console.log(object2.value);
+// → 20
+*/
+
+/*
+let object1 = {value: 10};
+const object2 = object1;
+let object3 = {value: 10};
+
+console.log(object1 == object2);
+// → true
+
+console.log(object1 == object3);
+// → false
+
+object1.value = 15;
+
+console.log(object2.value);
+// → 10
+
+console.log(object3.value);
+// → 10
+
+object1.value = 20;
+
+console.log(object2.value);
+// → 10
+*/
+
+/*
+const score = {visitors: 0, home: 0};
+
+// This is okay
+score.visitors = 1;
+
+// This isn't allowed
+score = {visitors: 1, home: 1};
+*/
+
+/*
+let listinha = [];
+
+function seAlembrar(terefa) {
+    listinha.push(terefa);
+}
+
+function fazerTarefa() {
+    return listinha.shift();
+}
+
+function naoSeEsquecer(terefa) {
+    listinha.unshift(terefa);
+}
+
+seAlembrar("compras");
+seAlembrar("lavar o carro");
+naoSeEsquecer("pagar boleto");
+
+console.log(listinha);
+
+fazerTarefa();
+
+console.log(listinha);
+*/
+
+/*
+console.log([1, 2, 3, 2, 1].indexOf(2));
+// → 1
+console.log([1, 2, 3, 2, 1].lastIndexOf(2));
+// → 3
+*/
+
+/*
+console.log([0, 1, 2, 3, 4].slice(1, 2));
+// → [2, 3]
+console.log([0, 1, 2, 3, 4].slice(2));
+// → [2, 3, 4]
+console.log([0, 1, 2, 3, 4].slice(null, 3));
+// → [2, 3, 4]
+*/
+
+/*
+function remove(array, index) {
+    return array.slice(0, index)
+    .concat(array.slice(index + 1));
+}
+
+console.log(remove(["a", "b", "c", "d", "e"], 2));
+// → ["a", "b", "d", "e"]
+*/
