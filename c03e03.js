@@ -30,7 +30,7 @@ function contaNumeroDeBs(alfanumerico) {
     console.log(quantidadeDeBs);
 }
 
-let alfanumerico = "n„o gosto de BBB.";
+let alfanumerico = "n√£o gosto de BBB.";
 
 contaNumeroDeBs(alfanumerico);
 */
@@ -53,7 +53,7 @@ rl.question("Digite a palavra/frase a ser verificada: ", (resposta) => {
         if (isNaN(alfanumerico) || isNaN(caracterProcurado)) {
             contaCaracteresProcurados(alfanumerico, caracterProcurado);
         } else {
-            console.log("Isto n„o È uma string");
+            console.log("Isto n√£o √© uma string");
         }
         rl.close();
     });
