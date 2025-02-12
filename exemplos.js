@@ -339,16 +339,16 @@ score = {visitors: 1, home: 1};
 /*
 let listinha = [];
 
-function seAlembrar(terefa) {
-    listinha.push(terefa);
+function seAlembrar(tarefa) {
+    listinha.push(tarefa);
 }
 
 function fazerTarefa() {
     return listinha.shift();
 }
 
-function naoSeEsquecer(terefa) {
-    listinha.unshift(terefa);
+function naoSeEsquecer(tarefa) {
+    listinha.unshift(tarefa);
 }
 
 seAlembrar("compras");
