@@ -21,8 +21,8 @@ rl.question("Digite um número a ser verificado divisibilidade por 3 e por 5: ",
     console.log("Isso não é um número válido!");
   } else {
     
-    for (let contador = 1; contador <= numero; contador++) {
-        console.log(verificaFizBuzz(contador));
+    for (let indice = 1; indice <= numero; indice++) {
+        console.log(verificaFizBuzz(indice));
     }
   }
 

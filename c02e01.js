@@ -33,8 +33,8 @@ rl.question("Digite o tamanho da altura do triangulo: ", (resposta) => {
   } else {
     console.log("Você definiu a altura em: " + alturaDoTriangulo);
 
-    for (let contador = 1; contador <= alturaDoTriangulo; contador++) {
-        console.log("#".repeat(contador));
+    for (let indice = 1; indice <= alturaDoTriangulo; indice++) {
+        console.log("#".repeat(indice));
     }
   }
 

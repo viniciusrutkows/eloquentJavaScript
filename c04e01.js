@@ -53,7 +53,7 @@ function fazerListaDeNumeros(primeiroArgumento, ultimoArgumento, incrementadoDec
 
 function somarNumerosDaLista() {
     somaDosNumeros = 0;
-    for (let contador = 0; contador < listaDeNumerosInteiros.length; contador++) {
-        somaDosNumeros += listaDeNumerosInteiros[contador];
+    for (let indice = 0; indice < listaDeNumerosInteiros.length; indice++) {
+        somaDosNumeros += listaDeNumerosInteiros[indice];
     }
 }

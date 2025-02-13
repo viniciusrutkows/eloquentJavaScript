@@ -1,25 +1,33 @@
-/*
-REVERSING AN ARRAY
-Arrays have a reverse method that changes the array by inverting the order in which its elements appear. For this exercise, write two functions, reverseArray and reverseArrayInPlace.
-The first, reverseArray, should take an array as its argument and produce a new array that has the same elements in the inverse order.
-The second, reverseArrayInPlace, should do what the reverse method does: modify the array given as its argument by reversing its elements.
-Neither may use the standard reverse method.
-Thinking back to the notes about side effects and pure functions in the previous chapter, which variant do you expect to be useful in more situations?
-Which one runs faster?
-*/
+let tamanhoDoVetor = Math.floor(Math.random() * 10) + 1; // Garante pelo menos 1 elemento
+let vetorDeNumeros = [];
+let vetorInvertidoDeNumeros = [];
 
-let listaDeNumeros = [];
-let tamanhoDaLista = Math.floor(Math.random() * 10);
-
-function criarListaPopuladaDeNumeros(tamanhoDaLista) {
-    for (let contador = 0; contador < tamanhoDaLista; contador++) {
-        listaDeNumeros.push(Math.floor(Math.random() * 10));
+function criarListaPopuladaDeNumeros(inteiro) {
+    for (let indice = 0; indice < inteiro; indice++) {
+        vetorDeNumeros.push(Math.floor(Math.random() * 10));
     }
 }
 
-function criarNovaListaMasInvertida() {
-    
+function criarMesmaListaMasListaInvertida(lista) {
+    for (let indice = lista.length - 1; indice >= 0; indice--) {
+        vetorInvertidoDeNumeros.push(lista[indice]);
+    }
 }
 
-criarListaPopuladaDeNumeros(tamanhoDaLista);
-console.log(listaDeNumeros);
+function inverterListaOriginal(vetor) {
+
+    let variavelTemporaria;
+
+    for (let indice = 0; indice < vetor.length / 2; indice++) {
+        variavelTemporaria = vetor[indice];
+        vetor[indice] = vetor[(vetor.length - 1) - indice];
+        vetor[(lista.length - 1) - indice] = variavelTemporaria;
+    }
+}
+
+criarListaPopuladaDeNumeros(tamanhoDoVetor);
+console.log("Lista original:", vetorDeNumeros);
+criarMesmaListaMasListaInvertida(vetorDeNumeros);
+console.log("Lista invertida:", vetorInvertidoDeNumeros);
+inverterListaOriginal(vetorDeNumeros, vetorInvertidoDeNumeros);
+console.log("Lista invertida:", vetorDeNumeros);

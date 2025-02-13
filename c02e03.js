@@ -43,8 +43,8 @@ function criarTabuleiro (altura, largura) {
 }
 
 function criarLinha(altura, largura) {
-    for (let contador = 1; contador <= altura; contador++) {
-        if (contador % 2 !== 0 ? preencherLinhaImpar(largura) : preencherLinhaPar(largura));
+    for (let indice = 1; indice <= altura; indice++) {
+        if (indice % 2 !== 0 ? preencherLinhaImpar(largura) : preencherLinhaPar(largura));
     }
 }
 
@@ -60,8 +60,8 @@ function preencherLinhaImpar(largura) {
 }
 
 function preencherLinhaPar(largura) {
-    for (let contador = 1; contador <= largura; contador++) {
-        if (contador % 2 == 0) {
+    for (let indice = 1; indice <= largura; indice++) {
+        if (indice % 2 == 0) {
             process.stdout.write("#");
         } else {
             process.stdout.write(" ");

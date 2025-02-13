@@ -387,3 +387,7 @@ function remove(array, index) {
 console.log(remove(["a", "b", "c", "d", "e"], 2));
 // → ["a", "b", "d", "e"]
 */
+
+let letras = ["a", "b"];
+
+console.log(letras['0'] === 0);
